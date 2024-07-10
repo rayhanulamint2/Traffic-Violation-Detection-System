@@ -51,18 +51,21 @@ This project detects traffic rule violations using an Arduino and ESP32-CAM. The
 3. Select `AI Thinker ESP32-CAM` from the `Board` menu and the correct port.
 4. Upload the code to the ESP32-CAM.
 
+#### ESP32 AI THINKER PIN CONNECTIONS
+1. GND (Arduino) → GND (ESP32-CAM)
+2. 5V (Arduino) → 5V (ESP32-CAM)
+3. Pin 11 (Arduino) → GPIO 13 (ESP32-CAM)
+4. TX (Arduino) → RX (ESP32-CAM)
+5. RX (Arduino) → TX (ESP32-CAM)
+
 ### 3. Arduino Setup
-
-#### Connect Components:
-
-1. Connect the ultrasonic sensor to the Arduino.
-2. Connect the traffic light LEDs to the Arduino pins.
 
 #### Upload Code:
 
 1. Open the provided `arduino-code` in the Arduino IDE.
 2. Select `Arduino UNO` from the `Board` menu and the correct port.
 3. Upload the code to the Arduino.
+4. All Arduino pins will be connected with the LEDs according to the code, and the `whitePin` in the code helps to send a signal to the ESP32-CAM to take a picture.
 
 ## Usage
 
